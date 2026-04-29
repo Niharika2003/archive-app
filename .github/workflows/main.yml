@@ -1,0 +1,14 @@
+            - name: Setup Android SDK Tools
+  # You may pin to the exact commit or the version.
+  # uses: android-actions/setup-android@00854ea68c109d98c75d956347303bf7c45b0277
+  uses: android-actions/setup-android@v3.2.1
+  with:
+    # cmdline-tools-version. See https://developer.android.com/studio#command-line-tools-only
+    cmdline-tools-version: # optional, default is 10406996
+    # Android SDK is usable only after the license agreement. Should setup-android agree to the licences, provided by "sdkmanager --licenses"
+    accept-android-sdk-licenses: # optional, default is true
+    # Should accepted licenses be logged. If not, accepted licences will be accepted silently
+    log-accepted-android-sdk-licenses: # optional, default is true
+    # Additional packages to install
+    packages: # optional, default is tools platform-tools
+          
